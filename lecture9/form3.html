@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Form </title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+    <fieldset>
+    <legend>Personal Information </legend>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="DOB">Date OF Birth</label>
+            <input type="date" name="DOB" id="DOB">
+
+             <p>Gender</p>
+
+             <input type="radio" name="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="female" id="female">
+            <label for="female">Female</label>  
+
+            <br>    <br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="ind">India</option>
+                <option value="us">United States</option>
+            </select>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Address 
+            
+            <label for="street">Street</label>
+            <input type="text " id="street">
+
+            <label for="City">City</label>
+            <input type="text " id="City">
+
+            <label for="State">State</label>
+            <input type="text " id="State">
+
+            <label for="Zip Code">Zip Code</label>
+            <input type="number" name="Zip Code" id="Zip Code">
+
+        </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+             
+            <label for="tick">I agreee to the terms of service</label>
+            <input type="checkbox" name="tick" id="tick">
+             
+             
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button> 
+
+        </form>
+    
+</body>
+</html>
