@@ -8,24 +8,35 @@
     <style>
         .box{
             border: 2px solid black;
-            height: 209px;
+            overflow: auto;
         }
-        .item{float: right;
+        .item{
+            float: left;             
             width: 200px ;
             height: 200px;
             margin:2px ;
             background-color: aquamarine;
             border: 1px solid black;
         }
+        #item3{
+            float: right;
+        }
+        /* #item2{
+            float: right;
+        }
+        #item1{
+            float: right;
+        } */
+        
     </style>
 </head>
 <body>
     
          
         <div class="box">
-            <div class="item">A</div>
-            <div class="item">B</div>
-            <div class="item">C</div>
+            <div class="item" id="item1">A</div>
+            <div class="item" id="item2">B</div>
+            <div class="item" id="item3">C</div>
            
         </div>
     
