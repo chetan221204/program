@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="/lecture12/logo.webp">
     <title>Lec-22</title>
 <style>
+    
     .container{
          
        background-color: beige  ; 
@@ -17,18 +18,22 @@
         
     }
     .box1{
+        --primary-colour:brown;
          background-color: aqua;
          width: 430px;
          height: 432px;
-         border: 2px solid brown;
+         border: 2px solid val(--primary-colour);
          margin: 5px;
          padding: 5px;
-         box-shadow:-10px -15px darkorange,10px 15px  brown;  
+         box-shadow:-10px -15px darkorange,10px 15px  val(--primary-colour);  
     }
     img{
         padding: 5px;
         height: 200px;
         width: 200px;
+    }
+    #head1{
+        text-shadow: 2x 3px 1px white;
     }
 </style>
 </head>
@@ -36,9 +41,10 @@
     <div class="container">
         <div class="box1">
            <img src="/lecture12/logo.webp" alt="Google">
-           <h1>Welcome to Google</h1>
+           <h1 id="head1">Welcome to Google</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus saepe repellendus facere necessitatibus cumque quae tempore esse laboriosam fugiat sint vitae quis quia, cum impedit minus totam corrupti ipsam.</p>
         </div>
+        
     </div>
 </body>
 </html>
