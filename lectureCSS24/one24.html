@@ -11,12 +11,29 @@
             background-color: aqua;
             border: 2px solid black;
 
-            transition-property: all;
+            /* transition-property: all;
             transition-duration: 4s;
             transition-delay: 1s;
-            transition-timing-function: linear;
+            transition-timing-function: linear; */
+             
+            /* short hand notation */
+           /* 1)  property name|| duration */ 
+            /* transition: all 2s ; */
+
+            /* 2) property|| dusration ||delay */
+            /* transition: all 2s 5s; */
+
+            /* 3) property|| duration ||easing(timing) funtion */
+            /* transition: all 2s ease; */
+
+          /* 4) property name|| duration ||easing(timing) funtion || delay */
+            /* transition: all 2s ease-in-out 5s; */
+
+          /* 5) property name ||delay */
+            transition: width 1s,height 6s;
              
         }
+        
         .box1:hover{
             width: 1200px;
             height: 900px;
