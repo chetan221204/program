@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            min-height: 950px ;
+         background: #43C6AC;  /* fallback for old  browsers */
+        background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */  
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            width: 360px;
+            height: 600px;
+            border: 2px solid;
+            background-color: beige;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-left: 10px;
+
+        }
+        img{
+            margin-top: 10px;
+            height: 50%;
+            border-radius: 20px;
+            box-shadow: 1px 5px 20px rgba(10, 50, 158, 0.69);
+        }
+
+        .card h2{
+            margin-left: 10px;
+            font-size: 1.7rem;
+            
+        }
+        p{
+            margin-left: 10px;
+            font-size: 1.2rem;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./QR_Code.jpg" alt="QR_Code">
+            <h2 > <b>Improve your front end skills by developing Projects</b></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab at natus debitis delectus iusto numquam ullam, rem reprehenderit ipsum optio.</p>
+
+        </div>
+    </div>
+</body>
+</html>
