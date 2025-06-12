@@ -21,6 +21,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+             
 
         }
 .card{
@@ -58,14 +59,27 @@
     background-color: #5e7ded;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+#leftbox{
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
     
-
 }
-#amount img{
-    height: 50px;
-    width: 50px;
+ #leftbox img{
 
-}
+    height: 40px;
+    width: 40px;
+
+ }
+ 
 button{
      width: 80%;
     height: 9%;
@@ -98,7 +112,22 @@ button{
                </div>
 
                <div id="amount">
-                <img src="./itunelogo.png" alt="img">
+
+                    <div id="leftbox">
+                            <div class="imgbox">
+                               <img src="./itunelogo.png" alt="img">
+
+                            </div>
+                            <div class="textamountB">
+                                <p>Amount</p>
+                                <p>$99.9/year </p>
+                            </div>
+                    </div>
+
+                    <div class="rightbox">
+                        <a href="#">Change</a>
+                    </div>
+
                </div>
 
                <button id="payment">
