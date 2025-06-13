@@ -12,16 +12,50 @@
         .container{
             width: 100vw;
             height: 100vh;
-            background-color: rgb(116, 116, 181);
+            background-color: rgb(87, 87, 242);
             display: flex;
             justify-content: center;
             align-items: center;
+            word-wrap: inherit;
         }
         .card{
             width: 60%;
             height: 40%;
             border: 2px solid black;
+            display: flex;
+            justify-content: end;
+            background-color: rgb(201, 81, 105);
             
+        }
+        .card img{
+           /* display: flex; */ 
+            /* height:129px;
+            width: 100px; */
+             height: 24.3rem;
+             width: 30rem;
+        }
+        .leftbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            gap: 30px;
+            margin: 20px;
+            padding: 30px;
+        }
+        .leftbox h1{
+            font-size:40px;
+            color: aliceblue;
+        }
+        .leftbox p{
+            color: aliceblue;
+            text-shadow: 2px 2px 2px  rgb(201, 81, 105);
+            font-size: 20px;
+        }
+        .view{
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
         }
     </style>
 </head>
@@ -29,7 +63,25 @@
     <div class="container">
 
         <div class="card">
+            <div class="leftbox">
+                <h1>
+                Get insights that help your business grow 
+            </h1>
 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit minus eum! Id quibusdam exercitationem corporis praesentium, officiis molestiae tempore!l Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus.</p>
+
+            <div class="view">
+                  <div class="first"><h1>10K+</h1>
+                <p>Comments</p></div>
+                  <div class="second"><h1>214</h1>
+                <p>Paid Users</p></div>
+                  <div class="third"><h1>12M+</h1>
+                <p>Views</p></div>
+            </div>
+            </div>
+            <div class="rightbox">
+                <img src="./tect.jpg" alt="tect">
+            </div>
         </div>
 
     </div>
