@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <link rel="shortcut icon" href="/lecture12/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./blogs1.css">
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .header h3 {
+      color: #f5f5f5;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    #child {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    #child span {
+      color: aqua;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    #child span:hover {
+      color: orange;
+    }
+
+    button {
+      background-color: orange;
+      border: none;
+      padding: 0.5em 1em;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff9500;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      #child {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
 </head>
-<body>
+<body id="body">
+    <div class="header">
+    <h3>  Welcome  </h3>
+
+    <div id="child">
+      <span>Home</span>
+      <span>About</span>
+      <span>Content</span>
+      <span>Contact</span>
+    </div>
+
     <div class="container">
         <header class="header_container">
-            <h1 class="header_title">CodeHelps Blogs</h1>
+            <h1 class="header_title">Chetan's Blogs</h1>
 
-            <p class="header_Disc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis rerum voluptatibus maxime vel pariatur quaerat incidunt iure nesciunt nihil?</p>
+            <p class="header_Disc">Dive into a curated collection of inspiring articles across technology, travel, nature, food, and more. Each story brings you closer to the world through vivid images, thoughtful insights, and powerful storytelling. Start exploring today!</p>
         </header>
 
         <main class="main_container">
@@ -20,15 +103,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://as2.ftcdn.net/jpg/02/06/87/37/1000_F_206873769_unAhYpVv1QxeMzSH9YMtx7EpVgEneg6O.jpg"  alt="card 1 image"  class="card_image" loading="lazy" >
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">Exploring the Wild Forests</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription"> Discover the untouched beauty of lush green landscapes and hidden wildlife deep in the forest.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -50,7 +133,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://www.nature.org/en-us/magazine/magazine-articles/climate-change-resilient-forests-appalachians/"> Nature</a>
                         </span>
                     </div>
                 </div>
@@ -61,15 +144,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://png.pngtree.com/background/20250524/original/pngtree-ai-technology-future-background-picture-image_16573174.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">Top 5 AI Tools Revolutionizing 2025</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription">Dive into the latest AI tools transforming industries and how you can harness them.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -91,7 +174,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                            <a href="https://www.forbes.com/sites/forbestechcouncil/2025/06/10/top-5-ai-tools-driving-digital-transformation/">Technology</a>
                         </span>
                     </div>
                 </div>
@@ -102,15 +185,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://alpexcursion.com/storage/media/solo-travel-in-the-swiss-alps.webp" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">A Solo Journey Through the Alps</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription"> Experience breathtaking views and hidden gems while traveling solo through Europe’s alpine trails.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -132,7 +215,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://www.lonelyplanet.com/articles/hiking-the-alps-solo"> Travel</a>
                         </span>
                     </div>
                 </div>
@@ -143,15 +226,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://www.nasa.gov/wp-content/uploads/2023/03/main_image_deep_field_smacs0723-5mb.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">James Webb’s Deepest Space Photos Yet</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription">A stunning look at distant galaxies captured by the world’s most powerful telescope.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -173,7 +256,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                          <a href="https://www.nasa.gov/image-article/nasas-webb-delivers-deepest-infrared-image-of-universe-yet"> Space</a>
                         </span>
                     </div>
                 </div>
@@ -184,15 +267,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://thumbs.dreamstime.com/b/new-delhi-india-february-street-food-market-featuring-vendor-preparing-traditional-snacks-like-samosas-pakoras-capturing-366010680.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">Street Food That Tells a Story</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription"> From Delhi to Bangkok, explore the vibrant world of street food and the culture behind each dish.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -206,7 +289,7 @@
                                         John Doe 
                                     </span>
                                     <span class="authordate">
-                                        Sept 19,2025
+                                        June 19,2025
                                     </span>
                                 
                                 </div>
@@ -214,7 +297,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://www.dreamstime.com/new-delhi-india-february-street-food-market-featuring-vendor-preparing-traditional-snacks-like-samosas-pakoras-capturing-image366010680?utm_source=chatgpt.com">Food</a>
                         </span>
                     </div>
                 </div>
@@ -225,15 +308,15 @@
             
             <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://parametric-architecture.com/wp-content/uploads/2023/09/toranomon-hills-ingenhoven-architects.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">Urban Design: Cities of the Future</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription">Smart infrastructure, vertical gardens, and green tech reshaping tomorrow’s urban life. </p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -255,7 +338,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://www.scienceoxfordlive.com/future-sustainable-urban-planning-innovations/?utm_source=chatgpt.com">City</a>
                         </span>
                     </div>
                 </div>
@@ -264,15 +347,15 @@
 
              <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://www.diyphotographystuff.info/wp-content/uploads/2024/01/19.-Urban-Wildlife-Photographing-Animals-in-the-City.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title">The Secret Life of Urban Animals</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription"> Learn how animals like raccoons, foxes, and owls adapt and thrive in bustling city environments. </p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -286,7 +369,7 @@
                                         John Doe 
                                     </span>
                                     <span class="authordate">
-                                        Sept 19,2025
+                                        April 19,2025
                                     </span>
                                 
                                 </div>
@@ -294,7 +377,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://animeld.com/13-wild-animals-that-adapted-to-urban-living/?utm_source=chatgpt.com">Animals</a>
                         </span>
                     </div>
                 </div>
@@ -304,15 +387,15 @@
 
              <div class="card_Container">
                 <a href="#" class="card_image_container">
-                <img src="https://media.istockphoto.com/id/1448979924/photo/healthy-lifestyle-good-life-organic-food-vegetables-close-up-portrait-of-happy-cute-beautiful.jpg?s=612x612&w=0&k=20&c=dsEo0HsYGI0Gm8gt8zVTwM6oYVD7aFVmY4lzgZTGucU= " alt="card 1 image" class="card_image" loading="lazy">
+                <img src="https://andrewstuder.com/wp-content/uploads/2020/07/AF3I6658-scaled.jpg" alt="card 1 image" class="card_image" loading="lazy">
                  </a>
 
                 <div class="card_title_container">
 
                     <a href="#" class="card_title_a">
-                        <h2 class="card_title">New Gadgets Released</h2>
+                        <h2 class="card_title"> Faces of the World: A Photo Essay</h2>
                     </a>
-                    <p class="card_discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ad. Illo magnam deserunt .   </p>
+                    <p class="card_discription">A powerful collection capturing human emotion and diversity from different cultures and continents.</p>
                 </div>    
 
                 <div class="card_footer_container">
@@ -334,7 +417,7 @@
 
                     <div class="card_tag_container">
                         <span>
-                            Technology
+                           <a href="https://www.shutterstock.com/search/cultural-people-faces?utm_source=chatgpt.com">People</a>
                         </span>
                     </div>
                 </div>

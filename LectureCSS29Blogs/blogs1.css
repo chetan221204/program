@@ -15,9 +15,15 @@ body{
 .container{
                        
     /* height: 100%; */
-    max-width: 70vw;
+    /* max-width: 70vw;
     padding: 2rem 1rem;
-    margin: 0 auto ;
+    margin: 0 auto ; */
+
+     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
     /* border: 2px solid; */
     /* background-color: bisque; */
      
@@ -38,25 +44,27 @@ a{
     text-align: center;
 
 }
-.header_Disc{
+/* .header_Disc{
     max-width: 900px;
     text-align: center;
     color: rgb(93, 87, 87);
     margin: 0 auto;
-}
+} */
 .main_container{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    g
+    
     
 }
 .card_Container{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column;*/
+    border-radius: 2px; 
     border: 1px solid rgb(137, 129, 129);
-    border-radius: 2px;
+     max-width: 100%;
+    overflow: hidden;
 
 }
 .card_image_container{
@@ -66,11 +74,14 @@ a{
     height: 12rem;
 }
 .card_image{
-    object-fit: cover;
+    /* object-fit: cover;
     object-position: center;
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100%; */
+      width: 100%;
+      
+    height: 300px;
 }
 .card_title_container{
     display: flex;
@@ -100,6 +111,12 @@ a{
     display: flex;
     justify-content:space-between ;
      padding: 1.5rem;
+
+      /* display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;  gpt*/
     
 }
 .author_container{
@@ -133,7 +150,11 @@ a{
    display: flex;
    flex-direction: column; 
    text-align: start;
-   min-width: 10rem; /* to more in singe line*/
+   min-width: 5rem;
+    /*to more in singe line*/
+
+    
+
 }
  .authorname{
     color: blue;
@@ -152,3 +173,121 @@ a{
     justify-content: center;
     align-items: center;
  }
+
+ @media (max-width: 1024px) {
+  .main_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .main_container {
+    grid-template-columns: 1fr;
+  }
+}
+/* CSS appli shadow */
+.card_Container {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ 
+.header_title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: slideDownFade 0.8s ease-out;
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header_title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 0.5rem auto 0;
+  background: #3b82f6;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #3b82f6;
+}
+ 
+    .header_Disc {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #475569; /* slate-gray for better readability */
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.03);
+  animation: fadeInUp 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.card_title{
+    color: beige;
+    text-align: center;
+
+}
+nav {
+  position: fixed;        /* fixes navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;           /* full width */
+  background-color: #fff; /* white background */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  padding: 1rem 2rem;
+  z-index: 1000;          /* on top of other content */
+}
+.card_Container {
+  background-color: #fefefe;  /*white-ish background*/
+  border: 1px solid #ddd;     /* light border */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card_Container:hover {
+  background-color: bisque;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+.card_title {
+  color: #222;
+}
+
+.card_discription {
+  color: #555;
+}
+  
