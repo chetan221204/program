@@ -15,6 +15,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 body{
     height: 100vh;     
@@ -23,17 +24,21 @@ body{
     padding: 0.1rem;
 }
 .logoicon{
-   width: 40px;
-  height: 40px;
+    height: 60px; /* Increase this if needed */
+  width: auto ;  /* Maintain aspect ratio */
   margin-right: 10px;
 }
 .logo {
+  max-width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   color: var(--text-color);
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
+  background-size: cover;
+
 }
 
 .logo_text {
@@ -49,4 +54,36 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+.nav{
+  display: none;
+  gap: 1.5rem;
+}
+@media screen and( min-width:768px) {
+  .nav{
+    display: flex;
+  }
+  
+}
+.nav a{
+  color: #718096;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transform: color 0.1s;
+}
+.nav a:hover{
+  color: var(--link-color);
+}
+.contact-button{
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transition: all 0.1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.contact-button:hover{
+  background-color:  #5254f8;
 }
