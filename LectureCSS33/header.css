@@ -117,3 +117,8 @@ body{
   width: 1.5rem;
   
 }
+
+body{
+  border: 2px solid black;
+  margin: 1rem;
+}
