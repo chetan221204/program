@@ -17,11 +17,15 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;     
     text-align: center;
     background-color: var(--background-color);
     padding: 0.1rem;
+}
+header{
+  border: 2px solid black;
 }
 .logoicon{
     height: 60px; /* Increase this if needed */
