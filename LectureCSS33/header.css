@@ -26,6 +26,7 @@ body{
 }
 header{
   border: 2px solid black;
+  border: 5px solid yellow;
 }
 .logoicon{
     height: 60px; /* Increase this if needed */
