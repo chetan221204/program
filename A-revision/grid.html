@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 1rem;            
+
+
+            
+        }
+        .box{
+            border: rem solid black;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+          
+        }
+        #box1{
+            background-color: blue;
+
+        }
+        #box2{
+            background-color: yellow;
+        }
+        #box3{
+            background-color: chartreuse;
+        }
+        #box4{
+            background-color: aqua;
+        }
+        #box5{
+            background-color: violet;
+        }
+        #box6{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">OM Khan
+            <img src="" alt="">
+        </div>
+        <div class="box" id="box2">Mausi</div>
+        <div class="box" id="box3">NCC don</div>
+        <div class="box" id="box4">Prakhar don</div>
+        <div class="box" id="box5">king</div>
+        <div class="box" id="box6">Queen</div>
+    </div>
+</body>
+</html>
